@@ -21,7 +21,7 @@ namespace DesafioFundamentos.Models
             string placa = Console.ReadLine();
             veiculos.Add(placa);
 
-            // Feito
+            // Implementado
         }
 
         public void RemoverVeiculo()
@@ -32,6 +32,8 @@ namespace DesafioFundamentos.Models
             // *IMPLEMENTE AQUI*
 
             string placa = Console.ReadLine();
+
+            // Implementado
 
             // Verifica se o veículo existe
             if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
@@ -45,10 +47,14 @@ namespace DesafioFundamentos.Models
                 int horas = int.Parse(Console.ReadLine());
                 decimal valorTotal = precoInicial + (precoPorHora * horas);
 
+                // Implementado
+
                 // TODO: Remover a placa digitada da lista de veículos
                 // *IMPLEMENTE AQUI*
 
                 veiculos.Remove(placa);
+
+                // Implementado
 
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             }
@@ -73,7 +79,7 @@ namespace DesafioFundamentos.Models
                     System.Console.WriteLine(veiculo);
                 }
                 
-                // Feito
+                // Implementado
             }
             else
             {
